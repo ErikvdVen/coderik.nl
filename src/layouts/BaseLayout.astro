@@ -12,9 +12,6 @@ const { ...head } = Astro.props
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead {...head} />
-    <ViewTransitions />
-
     <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-XEET7YS3TC"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -25,6 +22,9 @@ const { ...head } = Astro.props
 
       gtag('config', 'G-XEET7YS3TC');
     </script>
+    
+    <BaseHead {...head} />
+    <ViewTransitions />
   </head>
   <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
     <Header client:load />
