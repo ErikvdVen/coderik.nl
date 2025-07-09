@@ -62,3 +62,21 @@ html.dark::view-transition-old(root) {
 html.dark::view-transition-new(root) {
   z-index: 1;
 }
+.logo path,
+.logo line {
+  stroke-width: 10px;
+  stroke: #343434;
+}
+
+.dark .logo path,
+.dark .logo line {
+  stroke: #5eebcc;
+}
+
+g#rotating-border path {
+  stroke: #343434;
+}
+
+.dark g#rotating-border path {
+  stroke: #5eebcc;
+}

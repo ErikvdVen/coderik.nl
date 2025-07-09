@@ -38,7 +38,7 @@ onMounted(() => {
     return
 
   if (document.documentElement.scrollTop > 100)
-    headerEl.classList.add('header-bg-blur')
+    headerEl.classList.add('header-bg-color')
 
   window.addEventListener('scroll', () => {
     if (scroll.value < 150) {
@@ -76,12 +76,46 @@ function toggleNavDrawer() {
 
 <template>
   <header
-    id="header" :class="{ 'header-bg-blur': scroll > 20 }"
-    class="!fixed bg-transparent z-899 w-screen h-20 px-6 flex justify-between items-center relative"
+    id="header" :class="{ 'header-bg-color': scroll > 20 }"
+    class="!sticky top-0 z-899 max-w-3xl mx-auto h-20 px-6 flex justify-between items-center relative"
   >
     <div class="flex items-center h-full">
-      <a href="/" mr-6 aria-label="Header Logo Image">
-        <img width="32" height="32" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
+      <a class="logo" href="/" mr-6 aria-label="Header Logo Image">
+        <svg width="45" height="45" viewBox="0 0 200 200" shape-rendering="geometricPrecision">
+        <path
+            d="M 100 10
+              A 90 90 0 0 0 100 190"
+            fill="none"
+            stroke-width="2"
+          />
+          <path
+            d="M 100 190
+              A 90 90 0 0 0 189.7 107.8"
+            fill="none"
+            stroke-width="2"
+            stroke-dasharray="27"
+          />
+          <path
+            d="M 100 10
+              A 90 90 0 0 1 190 100"
+            fill="none"
+            stroke-dasharray="10 20"
+            stroke-width="2"
+          />
+
+          <line x1="10" 
+            y1="100" 
+            stroke-width="2"
+            x2="150" y2="100" 
+            stroke-linecap="round"
+          />
+          <path
+            d="M 135.4 135.4
+              A 50 50 0 1 1 150 100"
+            fill="none"
+            stroke-width="2"
+          />
+        </svg>
       </a>
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a
@@ -125,8 +159,12 @@ function toggleNavDrawer() {
   transition: transform 0.4s ease;
 }
 
-.header-bg-blur {
-  --at-apply: backdrop-blur-sm;
+.header-bg-color {
+  background-color: #fff;
+}
+
+.dark .header-bg-color {
+  background-color: #0d1117;
 }
 
 .nav-drawer {

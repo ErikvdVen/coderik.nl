@@ -36,15 +36,4 @@
     stroke="#5eebcc"
     stroke-width="2"
     />
-  <style>
-    g {
-      fill: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      g {
-        fill: #FFF;
-      }
-    }
-  </style>
 </svg>
