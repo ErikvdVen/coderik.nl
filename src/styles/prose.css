@@ -122,10 +122,10 @@
   font-size: 0.875em;
 }
 .prose code::before {
-  content: '`';
+  content: '';
 }
 .prose code::after {
-  content: '`';
+  content: '';
 }
 .prose a code {
   color: #111827;
