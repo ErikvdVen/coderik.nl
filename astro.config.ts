@@ -7,8 +7,6 @@ import {transformerNotationDiff, transformerMetaHighlight} from '@shikijs/transf
 
 import expressiveCode from 'astro-expressive-code';
 
-import starlight from '@astrojs/starlight';
-
 export default defineConfig({
   site: 'https://coderik.nl/',
   integrations: [expressiveCode(), mdx(), sitemap(), UnoCSS({
