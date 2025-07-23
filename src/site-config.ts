@@ -29,7 +29,7 @@ export const siteConfig = {
       },
       {
         text: 'About',
-        href: '/about',
+        href: '/',
       },
     ],
   },
