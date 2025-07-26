@@ -50,6 +50,7 @@ export default defineConfig({
     'i-ri-file-list-2-line',
     'i-carbon-campsite',
     'i-simple-icons-github',
+    'i-simple-icons-mastodon',
     'i-simple-icons-x',
     'i-simple-icons-linkedin',
     'i-simple-icons-instagram',
@@ -58,6 +59,8 @@ export default defineConfig({
     'i-simple-icons-zhihu',
     'i-simple-icons-sinaweibo',
     'i-ri-github-line',
+    'i-ri-linkedin-line',
+    'i-ri-mastodon-line',
     'i-ri-twitter-x-line',
   ],
 })

@@ -6,6 +6,12 @@ export const siteConfig = {
   email: 'erikvandeven100@gmail.com',
   socialLinks: [
     {
+      text: 'Mastodon',
+      href: 'https://mastodon.social/@coderik',
+      icon: 'i-simple-icons-mastodon',
+      header: 'i-ri-mastodon-line',
+    },
+    {
       text: 'GitHub',
       href: 'https://github.com/erikvdven',
       icon: 'i-simple-icons-github',
@@ -13,8 +19,9 @@ export const siteConfig = {
     },
     {
       text: 'Linkedin',
-      href: '',
+      href: 'https://www.linkedin.com/in/erikvdven/',
       icon: 'i-simple-icons-linkedin',
+      header: 'i-ri-linkedin-line',
     },
   ],
   header: {
@@ -49,11 +56,15 @@ export const siteConfig = {
       },
       {
         text: 'LinkedIn',
-        href: '/md-stylehttp://linkedin.com/in/erikvdven/',
+        href: 'https://linkedin.com/in/erikvdven/',
       },
       {
         text: 'Github',
         href: 'https://github.com/erikvdven',
+      },
+      {
+        text: 'Mastodon',
+        href: 'https://mastodon.social/@coderik',
       }
     ],
   },
