@@ -38,6 +38,10 @@ export const siteConfig = {
         text: 'About',
         href: '/',
       },
+      {
+        text: 'Shelf',
+        href: '/shelf'
+      }
     ],
   },
   page: {
